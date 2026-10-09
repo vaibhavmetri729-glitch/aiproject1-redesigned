@@ -1,0 +1,501 @@
+team1,team2,team1_strength,team2_strength,winner
+Sri Lanka,New Zealand,76,84,Sri Lanka
+South Africa,Australia,83,86,Australia
+South Africa,Sri Lanka,81,76,South Africa
+India,England,93,77,India
+India,Pakistan,92,85,India
+South Africa,India,79,90,South Africa
+Pakistan,England,85,81,England
+South Africa,India,81,88,India
+South Africa,Australia,80,84,Australia
+India,Sri Lanka,87,79,India
+South Africa,Bangladesh,80,74,South Africa
+Bangladesh,South Africa,70,83,South Africa
+Bangladesh,South Africa,74,83,Bangladesh
+England,Australia,77,83,England
+England,Australia,82,87,Australia
+Pakistan,England,85,81,England
+Pakistan,Bangladesh,83,69,Pakistan
+Australia,Pakistan,84,83,Australia
+New Zealand,England,82,82,England
+India,Pakistan,89,84,India
+Bangladesh,Sri Lanka,69,79,Bangladesh
+England,Australia,81,88,Australia
+India,England,90,78,India
+South Africa,Bangladesh,82,71,Bangladesh
+Sri Lanka,New Zealand,73,83,New Zealand
+Bangladesh,South Africa,71,83,Bangladesh
+Australia,Sri Lanka,85,75,Australia
+England,Bangladesh,81,73,England
+Pakistan,South Africa,79,84,South Africa
+England,Australia,82,83,Australia
+England,New Zealand,82,82,New Zealand
+South Africa,England,79,81,South Africa
+Sri Lanka,England,76,77,England
+South Africa,Bangladesh,81,74,South Africa
+England,Australia,82,83,Australia
+India,New Zealand,92,81,India
+England,Sri Lanka,83,79,England
+India,England,89,77,India
+Australia,India,88,92,Australia
+Sri Lanka,England,77,79,Sri Lanka
+South Africa,Australia,83,83,South Africa
+South Africa,England,82,80,South Africa
+Bangladesh,Australia,72,83,Australia
+Sri Lanka,Australia,77,84,Australia
+New Zealand,Australia,82,88,New Zealand
+Bangladesh,India,75,89,Bangladesh
+India,South Africa,88,78,India
+India,South Africa,92,78,India
+Sri Lanka,India,79,88,India
+India,New Zealand,87,80,New Zealand
+Sri Lanka,England,78,82,England
+Bangladesh,Australia,72,89,Australia
+Sri Lanka,Australia,78,85,Sri Lanka
+Australia,Bangladesh,84,69,Australia
+Australia,Pakistan,84,79,Australia
+Australia,Sri Lanka,84,78,Australia
+Pakistan,Bangladesh,83,75,Pakistan
+New Zealand,South Africa,84,79,New Zealand
+Sri Lanka,New Zealand,77,80,Sri Lanka
+Bangladesh,Australia,69,87,Bangladesh
+Australia,India,89,89,India
+Bangladesh,Australia,70,89,Bangladesh
+South Africa,Bangladesh,79,70,Bangladesh
+South Africa,Bangladesh,79,70,Bangladesh
+Pakistan,South Africa,84,81,Pakistan
+India,Pakistan,89,79,India
+Australia,England,87,80,England
+England,Sri Lanka,80,75,England
+India,Pakistan,91,80,India
+Australia,India,87,87,India
+Bangladesh,Australia,72,88,Australia
+New Zealand,Sri Lanka,83,78,Sri Lanka
+South Africa,Sri Lanka,82,77,Sri Lanka
+Pakistan,Bangladesh,80,72,Bangladesh
+Pakistan,Sri Lanka,79,76,Pakistan
+Australia,England,89,83,Australia
+New Zealand,Pakistan,86,84,New Zealand
+Australia,India,83,89,India
+Pakistan,Australia,85,84,Pakistan
+India,Bangladesh,92,75,India
+Pakistan,Sri Lanka,80,73,Pakistan
+Australia,South Africa,89,83,Australia
+Australia,Bangladesh,84,71,Bangladesh
+New Zealand,England,85,82,New Zealand
+South Africa,India,78,92,India
+England,New Zealand,81,84,New Zealand
+Australia,India,86,87,Australia
+England,Australia,78,83,Australia
+South Africa,Bangladesh,83,73,South Africa
+Bangladesh,South Africa,69,79,Bangladesh
+India,South Africa,91,81,India
+South Africa,Bangladesh,81,72,South Africa
+Australia,India,84,89,India
+Sri Lanka,South Africa,77,83,South Africa
+South Africa,Bangladesh,82,74,South Africa
+Bangladesh,Pakistan,72,81,Pakistan
+India,South Africa,91,83,South Africa
+England,Pakistan,78,82,Pakistan
+Bangladesh,India,71,91,India
+Australia,New Zealand,87,86,Australia
+New Zealand,South Africa,80,82,South Africa
+Bangladesh,South Africa,74,83,South Africa
+Sri Lanka,England,76,77,England
+Australia,India,87,89,Australia
+Australia,New Zealand,83,84,New Zealand
+Sri Lanka,Pakistan,74,82,Pakistan
+Bangladesh,England,71,83,England
+Bangladesh,Sri Lanka,74,76,Sri Lanka
+England,Bangladesh,79,72,Bangladesh
+Pakistan,Sri Lanka,80,74,Pakistan
+India,Bangladesh,87,73,India
+Australia,England,83,77,Australia
+Australia,Sri Lanka,83,76,Australia
+New Zealand,Sri Lanka,80,79,New Zealand
+New Zealand,Bangladesh,84,69,New Zealand
+India,England,92,79,India
+Sri Lanka,Bangladesh,79,70,Sri Lanka
+Bangladesh,New Zealand,69,82,New Zealand
+Pakistan,Sri Lanka,82,77,Sri Lanka
+England,New Zealand,83,82,England
+Pakistan,South Africa,82,80,Pakistan
+Australia,South Africa,86,78,Australia
+England,Sri Lanka,79,74,England
+New Zealand,Pakistan,83,85,Pakistan
+Pakistan,India,79,89,India
+New Zealand,England,81,78,New Zealand
+New Zealand,South Africa,81,82,South Africa
+New Zealand,Australia,82,89,Australia
+England,India,77,92,India
+Sri Lanka,Bangladesh,73,71,Sri Lanka
+New Zealand,Pakistan,82,81,New Zealand
+South Africa,Pakistan,78,81,South Africa
+South Africa,New Zealand,81,80,South Africa
+New Zealand,Australia,85,85,New Zealand
+Pakistan,South Africa,85,80,Pakistan
+Australia,Sri Lanka,89,74,Australia
+Australia,New Zealand,88,85,Australia
+New Zealand,Sri Lanka,85,74,New Zealand
+Bangladesh,India,73,92,India
+New Zealand,South Africa,83,79,New Zealand
+New Zealand,Sri Lanka,82,77,New Zealand
+Australia,South Africa,89,84,Australia
+Pakistan,England,83,82,Pakistan
+Sri Lanka,South Africa,73,80,Sri Lanka
+Bangladesh,Pakistan,70,84,Pakistan
+New Zealand,Australia,80,89,Australia
+Pakistan,Sri Lanka,80,79,Pakistan
+India,Pakistan,92,84,India
+Australia,England,89,78,Australia
+South Africa,Sri Lanka,83,79,Sri Lanka
+Australia,England,83,82,Australia
+England,South Africa,79,78,England
+Pakistan,England,82,80,Pakistan
+Bangladesh,Australia,72,87,Australia
+India,Australia,90,87,India
+Bangladesh,South Africa,72,84,South Africa
+Australia,South Africa,87,79,Australia
+Bangladesh,India,74,93,India
+England,India,83,87,England
+Pakistan,England,85,82,Pakistan
+Australia,England,89,77,Australia
+South Africa,Bangladesh,78,71,South Africa
+Sri Lanka,England,74,82,Sri Lanka
+South Africa,India,81,89,South Africa
+Australia,Sri Lanka,87,76,Australia
+England,Bangladesh,83,73,Bangladesh
+Bangladesh,Pakistan,72,85,Pakistan
+New Zealand,South Africa,81,78,New Zealand
+Australia,Sri Lanka,88,79,Australia
+New Zealand,South Africa,82,83,South Africa
+New Zealand,England,83,81,England
+India,South Africa,93,84,India
+South Africa,Bangladesh,81,72,South Africa
+Australia,Sri Lanka,88,76,Australia
+Australia,England,89,81,England
+Pakistan,England,84,82,England
+Pakistan,Sri Lanka,83,73,Pakistan
+South Africa,Bangladesh,83,73,South Africa
+New Zealand,Sri Lanka,85,79,New Zealand
+Pakistan,England,82,77,England
+Sri Lanka,Bangladesh,76,75,Sri Lanka
+Pakistan,New Zealand,79,83,New Zealand
+England,Sri Lanka,82,76,England
+New Zealand,Australia,83,84,Australia
+Pakistan,Sri Lanka,80,75,Pakistan
+Australia,Sri Lanka,88,77,Sri Lanka
+Pakistan,Bangladesh,83,72,Pakistan
+England,Sri Lanka,79,78,England
+Australia,England,89,83,Australia
+Pakistan,England,79,80,England
+New Zealand,England,80,80,New Zealand
+Australia,New Zealand,83,86,New Zealand
+England,Sri Lanka,80,77,England
+England,Bangladesh,78,70,England
+Pakistan,Australia,80,84,Australia
+Bangladesh,South Africa,75,81,South Africa
+Bangladesh,South Africa,73,82,Bangladesh
+Australia,Bangladesh,89,69,Australia
+Bangladesh,Australia,70,86,Bangladesh
+India,Australia,90,83,Australia
+Sri Lanka,New Zealand,78,81,New Zealand
+Bangladesh,India,74,93,Bangladesh
+Pakistan,South Africa,79,84,South Africa
+Bangladesh,New Zealand,71,85,New Zealand
+New Zealand,Sri Lanka,83,74,New Zealand
+Bangladesh,South Africa,69,79,South Africa
+New Zealand,Bangladesh,86,74,New Zealand
+England,Australia,77,83,Australia
+England,India,82,90,India
+England,Sri Lanka,80,79,England
+England,South Africa,80,84,South Africa
+Australia,Pakistan,84,79,Australia
+New Zealand,India,80,93,India
+Australia,South Africa,86,82,Australia
+India,Bangladesh,93,71,India
+England,Bangladesh,81,70,England
+South Africa,India,82,90,South Africa
+New Zealand,England,82,78,England
+South Africa,India,79,93,India
+India,Sri Lanka,90,77,India
+Pakistan,Bangladesh,83,69,Pakistan
+England,Australia,81,89,England
+England,New Zealand,83,86,New Zealand
+Australia,Bangladesh,87,71,Australia
+Bangladesh,India,75,90,India
+England,Australia,81,87,Australia
+South Africa,England,83,82,South Africa
+New Zealand,Australia,84,87,Australia
+England,South Africa,81,82,England
+Australia,Pakistan,83,81,Australia
+England,Australia,78,87,Australia
+Australia,India,84,90,India
+India,Sri Lanka,91,75,India
+England,Pakistan,78,83,England
+England,Sri Lanka,83,76,England
+New Zealand,Australia,82,84,Australia
+Bangladesh,New Zealand,69,81,New Zealand
+Bangladesh,England,69,80,England
+Australia,New Zealand,87,82,Australia
+Sri Lanka,Pakistan,77,82,Pakistan
+England,India,78,89,India
+Pakistan,England,81,77,Pakistan
+New Zealand,Sri Lanka,85,74,New Zealand
+South Africa,Bangladesh,80,72,Bangladesh
+Pakistan,South Africa,82,81,Pakistan
+Bangladesh,New Zealand,75,86,New Zealand
+India,Bangladesh,88,69,India
+New Zealand,Pakistan,83,82,New Zealand
+India,New Zealand,88,84,New Zealand
+England,New Zealand,78,84,New Zealand
+England,Pakistan,81,84,Pakistan
+Australia,Sri Lanka,84,75,Sri Lanka
+Pakistan,New Zealand,83,84,Pakistan
+England,Sri Lanka,82,74,Sri Lanka
+Pakistan,Australia,85,83,Australia
+New Zealand,India,82,89,New Zealand
+South Africa,Bangladesh,78,72,Bangladesh
+Bangladesh,Australia,69,86,Australia
+Bangladesh,South Africa,75,78,South Africa
+India,New Zealand,87,83,India
+Bangladesh,Australia,73,85,Australia
+England,India,80,88,England
+South Africa,Australia,82,87,Australia
+England,South Africa,81,80,England
+Sri Lanka,South Africa,73,78,South Africa
+England,New Zealand,80,81,England
+South Africa,New Zealand,79,86,New Zealand
+England,India,79,90,India
+Bangladesh,Sri Lanka,70,79,Bangladesh
+South Africa,Sri Lanka,83,77,South Africa
+Sri Lanka,Bangladesh,76,71,Sri Lanka
+Pakistan,England,81,79,Pakistan
+Sri Lanka,New Zealand,74,84,Sri Lanka
+New Zealand,Australia,80,86,New Zealand
+India,Australia,88,88,India
+England,Pakistan,80,80,Pakistan
+India,Sri Lanka,93,73,India
+Bangladesh,India,71,88,India
+Pakistan,Australia,81,88,Australia
+Bangladesh,Pakistan,72,85,Pakistan
+Sri Lanka,Bangladesh,78,75,Sri Lanka
+Australia,New Zealand,83,81,New Zealand
+Australia,Pakistan,84,80,Australia
+Pakistan,Australia,79,86,Australia
+Australia,New Zealand,83,86,New Zealand
+Pakistan,England,83,79,England
+England,Bangladesh,81,74,England
+South Africa,India,83,87,India
+South Africa,New Zealand,84,81,South Africa
+Sri Lanka,New Zealand,77,81,Sri Lanka
+New Zealand,England,80,78,New Zealand
+Pakistan,Sri Lanka,80,74,Pakistan
+South Africa,Sri Lanka,82,75,Sri Lanka
+Bangladesh,Australia,73,86,Bangladesh
+England,Pakistan,78,80,Pakistan
+India,Sri Lanka,90,76,India
+India,New Zealand,89,86,India
+India,Bangladesh,92,72,India
+Pakistan,South Africa,80,82,South Africa
+Australia,South Africa,88,78,South Africa
+India,New Zealand,90,83,India
+Pakistan,Sri Lanka,84,76,Pakistan
+Sri Lanka,Australia,73,84,Sri Lanka
+Pakistan,India,82,87,India
+Sri Lanka,Australia,73,85,Sri Lanka
+Australia,Pakistan,88,85,Australia
+Sri Lanka,South Africa,77,78,South Africa
+New Zealand,Sri Lanka,80,76,New Zealand
+Australia,India,85,90,India
+Pakistan,India,83,87,India
+South Africa,Sri Lanka,81,75,South Africa
+Australia,India,83,88,Australia
+England,South Africa,80,78,England
+England,India,80,92,India
+India,Bangladesh,89,75,India
+New Zealand,South Africa,83,80,New Zealand
+Bangladesh,New Zealand,75,85,Bangladesh
+Pakistan,England,85,78,Pakistan
+Bangladesh,New Zealand,72,80,Bangladesh
+New Zealand,Bangladesh,84,69,New Zealand
+New Zealand,South Africa,84,80,New Zealand
+South Africa,Pakistan,84,81,South Africa
+England,India,81,88,England
+New Zealand,Pakistan,85,83,New Zealand
+Sri Lanka,Australia,77,83,Australia
+Sri Lanka,South Africa,74,84,South Africa
+India,New Zealand,89,80,India
+India,Bangladesh,87,72,India
+Sri Lanka,England,79,83,England
+South Africa,India,78,89,South Africa
+Australia,England,89,82,Australia
+England,Bangladesh,83,73,England
+England,South Africa,81,82,South Africa
+Bangladesh,England,69,78,England
+Pakistan,Bangladesh,80,69,Pakistan
+England,Pakistan,81,83,Pakistan
+Pakistan,South Africa,84,78,South Africa
+Bangladesh,England,74,82,England
+Australia,Sri Lanka,86,77,Australia
+Australia,New Zealand,87,84,Australia
+Sri Lanka,Bangladesh,73,71,Sri Lanka
+Australia,Sri Lanka,88,73,Australia
+New Zealand,Sri Lanka,82,75,New Zealand
+Sri Lanka,Australia,73,83,Australia
+India,Pakistan,90,83,India
+England,India,80,91,India
+South Africa,Bangladesh,79,70,South Africa
+Pakistan,England,81,83,Pakistan
+England,Bangladesh,80,73,Bangladesh
+Australia,England,84,81,Australia
+South Africa,Bangladesh,79,71,South Africa
+Sri Lanka,India,77,91,India
+New Zealand,Pakistan,86,80,Pakistan
+Sri Lanka,England,79,82,England
+India,Bangladesh,93,73,Bangladesh
+South Africa,England,81,77,South Africa
+Australia,India,87,88,India
+Pakistan,India,83,92,Pakistan
+India,Bangladesh,89,69,India
+India,Bangladesh,87,74,India
+Sri Lanka,England,77,77,Sri Lanka
+England,Pakistan,77,82,Pakistan
+Sri Lanka,South Africa,74,81,South Africa
+Bangladesh,New Zealand,74,83,Bangladesh
+Sri Lanka,India,78,92,Sri Lanka
+Australia,New Zealand,85,80,New Zealand
+Bangladesh,Pakistan,74,79,Pakistan
+India,Bangladesh,90,74,India
+Australia,England,89,82,Australia
+New Zealand,Bangladesh,83,72,New Zealand
+Pakistan,England,84,78,Pakistan
+New Zealand,South Africa,83,78,New Zealand
+England,South Africa,83,78,England
+Bangladesh,Pakistan,73,84,Pakistan
+Pakistan,Bangladesh,85,71,Pakistan
+Australia,Sri Lanka,86,78,Australia
+Pakistan,New Zealand,84,84,Pakistan
+South Africa,England,80,82,England
+Pakistan,New Zealand,79,82,New Zealand
+Bangladesh,England,73,77,England
+Sri Lanka,South Africa,78,83,Sri Lanka
+New Zealand,South Africa,86,79,New Zealand
+Sri Lanka,Pakistan,74,83,Pakistan
+Australia,England,84,82,Australia
+India,Australia,87,83,India
+Sri Lanka,Australia,73,86,Sri Lanka
+New Zealand,South Africa,80,81,South Africa
+England,Bangladesh,81,73,England
+Bangladesh,South Africa,75,81,Bangladesh
+Bangladesh,India,74,87,India
+England,Pakistan,80,83,Pakistan
+England,Bangladesh,80,74,England
+New Zealand,Pakistan,81,84,Pakistan
+New Zealand,South Africa,86,79,New Zealand
+Australia,England,83,79,Australia
+New Zealand,Sri Lanka,84,73,New Zealand
+Sri Lanka,England,75,77,England
+New Zealand,Pakistan,86,83,Pakistan
+New Zealand,South Africa,84,79,New Zealand
+New Zealand,Bangladesh,81,75,New Zealand
+Sri Lanka,India,77,89,India
+Australia,Bangladesh,89,74,Bangladesh
+England,India,80,91,England
+India,New Zealand,89,82,New Zealand
+Bangladesh,Sri Lanka,74,74,Bangladesh
+Bangladesh,Pakistan,70,83,Pakistan
+Australia,India,88,87,India
+Sri Lanka,England,74,79,England
+India,New Zealand,91,83,New Zealand
+Pakistan,England,81,83,England
+South Africa,New Zealand,78,83,New Zealand
+Pakistan,England,82,80,Pakistan
+Sri Lanka,Bangladesh,74,73,Sri Lanka
+New Zealand,South Africa,82,78,New Zealand
+Sri Lanka,Australia,76,89,Australia
+Sri Lanka,Pakistan,78,85,Pakistan
+India,Sri Lanka,90,78,Sri Lanka
+Australia,India,85,87,Australia
+India,South Africa,89,78,India
+South Africa,New Zealand,81,81,South Africa
+New Zealand,Australia,80,83,Australia
+Sri Lanka,Bangladesh,73,69,Bangladesh
+Australia,India,84,89,India
+New Zealand,Bangladesh,80,74,Bangladesh
+India,Australia,88,89,India
+South Africa,India,81,90,India
+South Africa,Bangladesh,80,74,South Africa
+Australia,Bangladesh,83,73,Australia
+Sri Lanka,England,74,83,England
+England,Pakistan,83,79,Pakistan
+Pakistan,India,79,88,India
+New Zealand,South Africa,86,79,New Zealand
+South Africa,Sri Lanka,79,74,South Africa
+Australia,Pakistan,89,83,Australia
+New Zealand,Pakistan,80,83,Pakistan
+South Africa,New Zealand,81,84,New Zealand
+India,Pakistan,88,82,Pakistan
+England,Australia,80,85,Australia
+Bangladesh,Australia,74,83,Australia
+England,India,79,89,England
+South Africa,Bangladesh,83,70,South Africa
+South Africa,Sri Lanka,78,73,South Africa
+India,England,92,80,India
+England,New Zealand,82,80,England
+England,Bangladesh,80,70,England
+Pakistan,New Zealand,81,86,New Zealand
+Bangladesh,Pakistan,75,81,Bangladesh
+Pakistan,England,79,78,Pakistan
+Pakistan,South Africa,81,81,Pakistan
+South Africa,Pakistan,79,81,Pakistan
+India,Bangladesh,92,71,India
+Pakistan,India,79,91,India
+India,Bangladesh,88,73,India
+Pakistan,New Zealand,83,83,New Zealand
+Sri Lanka,Australia,76,88,Australia
+Pakistan,Sri Lanka,82,77,Sri Lanka
+Pakistan,Sri Lanka,84,78,Sri Lanka
+Sri Lanka,England,74,83,England
+Pakistan,New Zealand,85,81,Pakistan
+India,Sri Lanka,87,75,India
+Bangladesh,India,73,93,India
+India,Australia,91,89,Australia
+Australia,South Africa,83,82,Australia
+Pakistan,Bangladesh,83,71,Pakistan
+Sri Lanka,South Africa,79,83,South Africa
+Bangladesh,India,70,90,Bangladesh
+South Africa,India,80,88,India
+Australia,New Zealand,83,85,New Zealand
+England,India,77,93,India
+Bangladesh,India,73,87,India
+New Zealand,Australia,85,86,Australia
+New Zealand,South Africa,83,81,New Zealand
+Sri Lanka,Bangladesh,77,72,Sri Lanka
+England,Australia,77,87,Australia
+India,Bangladesh,87,69,India
+Australia,India,86,88,Australia
+Sri Lanka,South Africa,79,82,South Africa
+South Africa,New Zealand,80,86,South Africa
+Australia,New Zealand,89,82,Australia
+England,Australia,81,88,Australia
+New Zealand,India,84,90,India
+Sri Lanka,Australia,74,86,Australia
+England,Pakistan,78,81,Pakistan
+Australia,Bangladesh,84,75,Australia
+Bangladesh,New Zealand,74,83,New Zealand
+India,New Zealand,90,84,India
+Bangladesh,South Africa,72,84,South Africa
+New Zealand,Bangladesh,84,72,New Zealand
+New Zealand,Pakistan,83,83,Pakistan
+New Zealand,India,84,92,India
+Pakistan,India,79,93,India
+England,New Zealand,81,80,England
+South Africa,England,78,79,South Africa
+Pakistan,Australia,81,87,Australia
+New Zealand,Bangladesh,85,71,New Zealand
+South Africa,New Zealand,80,81,New Zealand
+New Zealand,Bangladesh,84,69,New Zealand
+Sri Lanka,England,74,78,England
+Australia,England,88,82,England
+Pakistan,South Africa,82,80,Pakistan

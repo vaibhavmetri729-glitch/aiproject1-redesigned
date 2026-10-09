@@ -1,0 +1,151 @@
+/* =========================================================
+   GLOBAL APP STYLES
+========================================================= */
+
+body {
+  margin: 0;
+  background: #fff5f7;
+  color: #070707;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+select,
+input {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.section {
+  margin-top: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Normal application cards */
+.card {
+  background: #fff0f4;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #f3cbd6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(190, 100, 130, 0.15);
+}
+
+.card h3 {
+  color: #7c304d;
+}
+
+.prediction {
+  background: #fff0f4;
+  border: 1px solid #f3cbd6;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+button {
+  background: #d4af37;
+  color: #172033;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e6c354;
+}
+
+select,
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5bfc9;
+  background: #fff8fa;
+  color: #27212a;
+  margin-right: 10px;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #d4af37;
+}
+
+h2 {
+  color: #1f2937;
+}
+
+h3 {
+  color: #374151;
+}
+
+.progress-container {
+  width: 100%;
+  background: #f3dfe5;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 28px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  color: #1f2937;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   SMARTCRICKET VARIABLES
+========================================================= */
+
+:root {
+  --gold: #d4af37;
+  --navy-950: #172033;
+  --navy-900: #202a3d;
+  --navy-800: #29344a;
+  --navy-700: #39445a;
+  --navy-border: #e5c7cf;
+  --green-bright: #16a34a;
+
+  --pink-bg: #fff5f7;
+  --pink-card: #fff0f4;
+  --pink-card-light: #fff8fa;
+  --pink-border: #f1c8d3;
+  --pink-text: #3f3037;
+  --pink-muted: #7f6871;
+
+  --sans: Arial, sans-serif;
+}

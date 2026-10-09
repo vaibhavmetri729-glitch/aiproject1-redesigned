@@ -1,0 +1,821 @@
+/* =========================================================
+   SMARTCRICKET AI — BENTO STRATEGY ENGINE
+   ========================================================= */
+
+.strategy-engine {
+  width: 100%;
+  color: #c7cede;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.strategy-header.bento-hero {
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(212, 175, 55, 0.13),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      var(--navy-900),
+      var(--navy-950)
+    );
+
+  border: 1px solid var(--navy-border);
+  border-top: 3px solid var(--gold);
+  border-radius: 14px;
+
+  padding: 26px 28px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.strategy-eyebrow {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.strategy-header h2 {
+  margin: 0 0 8px;
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.strategy-header p {
+  margin: 0;
+  max-width: 680px;
+  color: #8f9ab0;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.ai-live-status {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  color: var(--gold);
+
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #48d597;
+
+  box-shadow: 0 0 10px rgba(72, 213, 151, 0.8);
+}
+
+/* =========================================================
+   GENERIC BENTO CARD
+   ========================================================= */
+
+.bento-card {
+  background: var(--navy-900);
+  border: 1px solid var(--navy-border);
+  border-radius: 12px;
+  padding: 21px;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.bento-card h3 {
+  margin: 0 0 5px;
+  color: white;
+  font-size: 0.98rem;
+}
+
+.bento-card p {
+  margin: 0;
+  color: #8f9ab0;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.bento-card-head {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.strategy-number {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding-top: 3px;
+}
+
+/* =========================================================
+   MATCH SETUP
+   ========================================================= */
+
+.strategy-setup {
+  margin-bottom: 16px;
+}
+
+.strategy-input-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    35px
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 12px;
+  align-items: end;
+}
+
+.strategy-input-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.strategy-input-grid label span {
+  color: #78859c;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.strategy-input-grid select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 11px;
+
+  background: var(--navy-800);
+  color: white;
+
+  border: 1px solid var(--navy-border);
+  border-radius: 6px;
+
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.strategy-input-grid select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.vs-badge {
+  align-self: center;
+
+  color: var(--gold);
+
+  font-size: 0.65rem;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+.strategy-generate-btn {
+  margin-top: 17px;
+}
+
+/* =========================================================
+   BENTO RESULTS GRID
+   ========================================================= */
+
+.strategy-bento {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  grid-auto-flow: dense;
+
+  gap: 14px;
+}
+
+/* =========================================================
+   AI EDGE
+   ========================================================= */
+
+.ai-edge-card {
+  grid-column: span 1;
+
+  background:
+    radial-gradient(
+      circle at 70% 15%,
+      rgba(212, 175, 55, 0.14),
+      transparent 50%
+    ),
+    var(--navy-900);
+
+  border-top: 3px solid var(--gold);
+}
+
+.ai-edge-card h3 {
+  font-size: 1.15rem;
+  margin-top: 4px;
+}
+
+.ai-edge-card > p {
+  margin-bottom: 16px;
+}
+
+.confidence-big {
+  color: var(--gold);
+
+  font-size: 2.5rem;
+  font-weight: 900;
+
+  line-height: 1;
+  margin-top: 12px;
+}
+
+.confidence-label {
+  display: block;
+
+  color: #7f8ba2;
+
+  font-size: 0.6rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  margin-top: 5px;
+}
+
+.confidence-track {
+  height: 6px;
+
+  background: var(--navy-700);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin-top: 14px;
+}
+
+.confidence-track div {
+  height: 100%;
+  background: var(--gold);
+  border-radius: inherit;
+}
+
+.edge-verdict {
+  display: inline-block;
+
+  margin-top: 14px;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  background: rgba(72, 213, 151, 0.08);
+  border: 1px solid rgba(72, 213, 151, 0.22);
+
+  color: #48d597;
+
+  font-size: 0.58rem;
+  font-weight: 900;
+}
+
+/* =========================================================
+   VENUE
+   ========================================================= */
+
+.venue-card {
+  grid-column: span 1;
+}
+
+.venue-card h3 {
+  margin-top: 3px;
+  font-size: 1.2rem;
+}
+
+.mini-stat {
+  margin-top: 18px;
+
+  padding-top: 13px;
+
+  border-top: 1px solid var(--navy-border);
+}
+
+.mini-stat span,
+.final-ai-grid span {
+  display: block;
+
+  color: #6f7c93;
+
+  font-size: 0.57rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.mini-stat strong {
+  display: block;
+
+  color: white;
+
+  font-size: 0.84rem;
+
+  margin-top: 4px;
+}
+
+.mini-insight {
+  margin-top: 14px;
+
+  padding: 10px;
+
+  border-radius: 7px;
+
+  background: var(--navy-950);
+
+  color: #b9c2d2;
+
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   PLAYING XI
+   ========================================================= */
+
+.xi-card {
+  grid-column: span 2;
+}
+
+.player-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 7px;
+}
+
+.player-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 9px 10px;
+
+  background: var(--navy-950);
+
+  border: 1px solid var(--navy-border);
+
+  border-radius: 6px;
+}
+
+.player-item span {
+  color: var(--gold);
+
+  font-size: 0.6rem;
+  font-weight: 900;
+
+  min-width: 20px;
+}
+
+.player-item strong {
+  color: #e5e9f0;
+
+  font-size: 0.73rem;
+}
+
+/* =========================================================
+   OPPONENT
+   ========================================================= */
+
+.opponent-card {
+  grid-column: span 2;
+}
+
+.scout-highlight {
+  margin: 14px 0;
+
+  padding: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.08),
+      transparent
+    );
+
+  border-left: 2px solid var(--gold);
+
+  color: #d6dce7;
+
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.scout-row {
+  display: grid;
+
+  grid-template-columns: 75px 1fr;
+
+  gap: 10px;
+
+  padding: 9px 0;
+
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.scout-row span {
+  color: var(--gold);
+
+  font-size: 0.58rem;
+  font-weight: 900;
+  padding-top: 2px;
+}
+
+.scout-row p {
+  color: #aeb7c8;
+  font-size: 0.72rem;
+}
+
+.best-matchup {
+  margin-top: 12px;
+
+  color: #e5e9f0;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* =========================================================
+   BATTING
+   ========================================================= */
+
+.batting-card {
+  grid-column: span 2;
+}
+
+.batting-order {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.batting-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 10px;
+
+  background: var(--navy-950);
+
+  border: 1px solid var(--navy-border);
+
+  border-radius: 6px;
+}
+
+.batting-player span {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--gold);
+
+  color: var(--navy-950);
+
+  font-size: 0.62rem;
+  font-weight: 900;
+}
+
+.batting-player strong {
+  color: #e5e9f0;
+  font-size: 0.74rem;
+}
+
+/* =========================================================
+   BOWLING
+   ========================================================= */
+
+.bowling-card {
+  grid-column: span 2;
+}
+
+.strategy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.strategy-list-item {
+  display: flex;
+  gap: 9px;
+
+  padding: 9px 10px;
+
+  background: var(--navy-950);
+
+  border: 1px solid var(--navy-border);
+
+  border-radius: 6px;
+}
+
+.strategy-list-item > span {
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.strategy-list-item p {
+  color: #b9c2d2;
+  font-size: 0.72rem;
+}
+
+/* =========================================================
+   TACTICAL CARDS
+   ========================================================= */
+
+.tactic-card-large {
+  grid-column: span 2;
+
+  min-height: 145px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--navy-900),
+      var(--navy-950)
+    );
+
+  border-top: 2px solid var(--gold);
+}
+
+.tactic-card-large h3 {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.tactic-card-large p {
+  margin-top: 8px;
+
+  max-width: 520px;
+
+  font-size: 0.76rem;
+}
+
+/* =========================================================
+   TOSS
+   ========================================================= */
+
+.toss-card {
+  grid-column: span 1;
+}
+
+.toss-card h3 {
+  margin-top: 4px;
+}
+
+.toss-card p {
+  margin-top: 10px;
+}
+
+/* =========================================================
+   FIELD
+   ========================================================= */
+
+.field-card {
+  grid-column: span 3;
+}
+
+.field-box {
+  margin-top: 14px;
+
+  padding: 15px;
+
+  background: var(--navy-950);
+
+  border: 1px solid var(--navy-border);
+
+  border-radius: 7px;
+
+  color: #c7cede;
+
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   FINAL AI
+   ========================================================= */
+
+.final-ai-card {
+  grid-column: 1 / -1;
+
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(212, 175, 55, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      var(--navy-900),
+      var(--navy-950)
+    );
+
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  border-top: 3px solid var(--gold);
+
+  border-radius: 12px;
+
+  padding: 24px;
+}
+
+.final-ai-card h3 {
+  color: white;
+  font-size: 1.08rem;
+  margin: 4px 0 9px;
+}
+
+.final-ai-card > p {
+  max-width: 850px;
+
+  color: #c7cede;
+
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.final-ai-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.final-ai-grid > div {
+  padding: 13px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid var(--navy-border);
+
+  border-radius: 7px;
+}
+
+.final-ai-grid strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: white;
+
+  font-size: 0.78rem;
+}
+
+.strategy-confidence {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 17px;
+  padding-top: 14px;
+
+  border-top: 1px solid var(--navy-border);
+}
+
+.strategy-confidence span {
+  color: #68758c;
+
+  font-size: 0.58rem;
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+}
+
+.strategy-confidence strong {
+  color: var(--gold);
+
+  font-size: 0.65rem;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .strategy-bento {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .xi-card,
+  .opponent-card,
+  .batting-card,
+  .bowling-card,
+  .tactic-card-large,
+  .field-card {
+    grid-column: span 2;
+  }
+
+  .toss-card {
+    grid-column: span 2;
+  }
+
+  .strategy-input-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .vs-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .strategy-header.bento-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .strategy-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-edge-card,
+  .venue-card,
+  .xi-card,
+  .opponent-card,
+  .batting-card,
+  .bowling-card,
+  .tactic-card-large,
+  .toss-card,
+  .field-card,
+  .final-ai-card {
+    grid-column: span 1;
+  }
+
+  .strategy-input-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-ai-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-confidence {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+}

@@ -1,0 +1,1056 @@
+/* ============================================================
+   SMARTCRICKET AI - DAZN STYLE HOME
+============================================================ */
+
+.dz {
+  --dz-bg: #0a0a0c;
+  --dz-panel: #16171b;
+  --dz-line: rgba(255, 255, 255, 0.1);
+  --dz-text: #f4f4f5;
+  --dz-muted: #a1a1aa;
+  --dz-gold: #d4af37;
+  --dz-red: #e11d2e;
+
+  position: relative;
+  background: var(--dz-bg);
+  color: var(--dz-text);
+  min-height: 100vh;
+}
+
+.dz * {
+  box-sizing: border-box;
+}
+
+.dz a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dz h1,
+.dz h2,
+.dz h3,
+.dz p {
+  margin: 0;
+}
+
+.dz-wrap {
+  width: min(1320px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* ============================================================
+   FIXED BACKGROUND
+============================================================ */
+
+.dz-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+
+  /* Fallback background */
+  background-color: #111;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  transition: none;
+}
+
+.dz-bg-shade {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 10, 12, 0.88) 0%,
+      rgba(10, 10, 12, 0.48) 50%,
+      rgba(10, 10, 12, 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 12, 0.25) 0%,
+      rgba(10, 10, 12, 0.1) 40%,
+      rgba(10, 10, 12, 0.95) 100%
+    );
+}
+
+.dz-fg {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.dz-intro {
+  min-height: 82vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding-bottom: 48px;
+}
+
+.dz-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 12px;
+
+  border-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--dz-line);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.dz-live i {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--dz-red);
+
+  box-shadow: 0 0 0 0 rgba(225, 29, 46, 0.7);
+
+  animation: dzPulse 1.8s infinite;
+}
+
+@keyframes dzPulse {
+  70% {
+    box-shadow: 0 0 0 10px rgba(225, 29, 46, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 46, 0);
+  }
+}
+
+.dz-intro h1 {
+  margin: 18px 0 10px;
+
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  line-height: 1;
+
+  font-weight: 800;
+  letter-spacing: -0.02em;
+
+  max-width: 820px;
+}
+
+.dz-score {
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  font-weight: 600;
+}
+
+.dz-score span {
+  color: var(--dz-muted);
+}
+
+.dz-status {
+  margin-top: 6px;
+  color: var(--dz-muted);
+}
+
+.dz-prob {
+  width: min(420px, 100%);
+  margin-top: 22px;
+}
+
+.dz-prob-top {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.9rem;
+  color: var(--dz-muted);
+
+  margin-bottom: 8px;
+}
+
+.dz-prob-top strong {
+  color: var(--dz-gold);
+}
+
+.dz-prob-bar {
+  height: 6px;
+
+  border-radius: 99px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  overflow: hidden;
+}
+
+.dz-prob-bar div {
+  height: 100%;
+
+  background: rgb(23, 137, 34);
+
+  border-radius: 99px;
+}
+
+.dz-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  margin-top: 26px;
+}
+
+.dz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 26px;
+
+  border-radius: 4px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.dz-btn--solid {
+  background:  rgb(23, 137, 34);
+  color: #111;
+}
+
+.dz-btn--solid:hover {
+  background:  rgba(255, 255, 255, 0.08);
+}
+
+.dz-btn--ghost {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.dz-btn--ghost:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ============================================================
+   CONTENT
+============================================================ */
+
+.dz-content {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 12, 0) 0,
+      rgba(10, 10, 12, 0.92) 120px,
+      var(--dz-bg) 260px
+    );
+
+  padding: 72px 0;
+}
+
+.dz-chips {
+  display: flex;
+  gap: 10px;
+
+  overflow-x: auto;
+
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+
+  scrollbar-width: none;
+}
+
+.dz-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.dz-chip {
+  flex: none;
+
+  padding: 8px 18px;
+
+  border-radius: 99px;
+
+  border: 1px solid var(--dz-line);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: var(--dz-text);
+
+  font: inherit;
+  font-size: 0.92rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.dz-chip:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.dz-chip.is-on {
+  background: var(--dz-gold);
+  border-color: var(--dz-gold);
+  color: #111;
+  font-weight: 700;
+}
+
+/* ============================================================
+   RAILS
+============================================================ */
+
+.dz-rail {
+  margin-top: 34px;
+}
+
+.dz-rail-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+}
+
+.dz-rail-head h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.dz-rail-head a {
+  color: var(--dz-muted);
+  font-size: 0.9rem;
+}
+
+.dz-rail-head a:hover {
+  color: var(--dz-gold);
+}
+
+.dz-rail-frame {
+  position: relative;
+}
+
+.dz-track {
+  display: flex;
+  gap: 14px;
+
+  overflow-x: auto;
+
+  scroll-snap-type: x proximity;
+
+  scrollbar-width: none;
+
+  padding: 4px 2px 10px;
+}
+
+.dz-track::-webkit-scrollbar {
+  display: none;
+}
+
+.dz-track > * {
+  scroll-snap-align: start;
+  flex: none;
+}
+
+.dz-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-60%);
+
+  z-index: 3;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  color: #fff;
+
+  font-size: 1.6rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  transition:
+    opacity 0.2s,
+    background 0.2s;
+}
+
+.dz-arrow--l {
+  left: -14px;
+}
+
+.dz-arrow--r {
+  right: -14px;
+}
+
+.dz-arrow:hover {
+  background: var(--dz-gold);
+  color: #111;
+}
+
+.dz-rail-frame:hover .dz-arrow,
+.dz-arrow:focus-visible {
+  opacity: 1;
+}
+
+.dz-empty {
+  color: var(--dz-muted);
+  padding: 30px 0;
+}
+
+/* ============================================================
+   CARDS
+============================================================ */
+
+.dz-card {
+  position: relative;
+
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: var(--dz-panel);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dz-card:hover,
+.dz-card:focus-visible {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.55);
+
+  outline: none;
+}
+
+.dz-card img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.dz-card-shade {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+}
+
+.dz-card-body {
+  position: absolute;
+
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+}
+
+.dz-card-body h3 {
+  font-size: 1.05rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.dz-card-body small,
+.dz-card-body span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 0.82rem;
+
+  color: #d4d4d8;
+}
+
+.dz-card-body small {
+  margin: 0 0 4px;
+
+  color: var(--dz-gold);
+
+  font-weight: 600;
+}
+
+.dz-pill {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  padding: 4px 10px;
+
+  border-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dz-pill--live {
+  background: var(--dz-red);
+}
+
+/* ============================================================
+   CARD SIZES
+============================================================ */
+
+.dz-card--match,
+.dz-card--video {
+  width: clamp(260px, 26vw, 380px);
+  aspect-ratio: 16 / 10;
+}
+
+.dz-card--series {
+  width: clamp(220px, 20vw, 300px);
+  aspect-ratio: 4 / 5;
+}
+
+.dz-card--format {
+  width: clamp(150px, 13vw, 200px);
+  aspect-ratio: 1;
+}
+
+.dz-card--format h3 {
+  position: absolute;
+
+  left: 14px;
+  bottom: 12px;
+
+  font-size: 1.1rem;
+}
+
+/* ============================================================
+   STORY CARDS
+============================================================ */
+
+.dz-card--story {
+  width: clamp(250px, 22vw, 320px);
+
+  background: var(--dz-panel);
+}
+
+.dz-card--story img {
+  position: static;
+
+  height: 170px;
+}
+
+.dz-story-text {
+  padding: 14px 16px 18px;
+}
+
+.dz-story-text small {
+  color: var(--dz-gold);
+
+  font-weight: 600;
+
+  font-size: 0.8rem;
+}
+
+.dz-story-text h3 {
+  margin-top: 6px;
+
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+/* ============================================================
+   PLAYER CARDS
+============================================================ */
+
+.dz-card--player {
+  width: clamp(190px, 16vw, 240px);
+
+  border-bottom: 3px solid var(--dz-red);
+}
+
+.dz-player-img {
+  height: 230px;
+
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      #2a2c33,
+      #121317
+    );
+}
+
+.dz-card--player .dz-player-img img {
+  position: static;
+
+  object-fit: contain;
+
+  object-position: bottom;
+}
+
+.dz-form {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #000;
+
+  border: 2px solid var(--dz-gold);
+
+  color: var(--dz-gold);
+
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.dz-player-info {
+  padding: 12px 14px 16px;
+}
+
+.dz-player-info strong {
+  display: block;
+}
+
+.dz-player-info span {
+  color: var(--dz-muted);
+  font-size: 0.85rem;
+}
+
+/* ============================================================
+   AI TOOL CARDS
+============================================================ */
+
+.dz-card--tool {
+  width: clamp(220px, 19vw, 280px);
+
+  padding: 22px 20px;
+
+  border: 1px solid var(--dz-line);
+}
+
+.dz-card--tool h3 {
+  font-size: 1.1rem;
+}
+
+.dz-card--tool p {
+  margin: 8px 0 18px;
+
+  color: var(--dz-muted);
+
+  line-height: 1.5;
+
+  font-size: 0.92rem;
+}
+
+.dz-card--tool span {
+  color: var(--dz-gold);
+
+  font-weight: 700;
+
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   LEADERBOARDS
+============================================================ */
+
+.dz-boards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.dz-board {
+  background: var(--dz-panel);
+
+  border: 1px solid var(--dz-line);
+
+  border-radius: 8px;
+
+  padding: 20px 22px;
+}
+
+.dz-board h3 {
+  font-size: 1.05rem;
+
+  margin-bottom: 10px;
+}
+
+.dz-board ol {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.dz-board li {
+  display: grid;
+
+  grid-template-columns: 28px 1fr auto;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 11px 0;
+
+  border-top: 1px solid var(--dz-line);
+}
+
+.dz-rank {
+  color: var(--dz-muted);
+
+  font-weight: 700;
+}
+
+.dz-pname small {
+  display: block;
+
+  color: var(--dz-muted);
+
+  font-size: 0.8rem;
+}
+
+.dz-board li strong {
+  color: var(--dz-gold);
+
+  font-size: 1.1rem;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.dz-footer {
+  background: #000;
+
+  border-top: 1px solid var(--dz-line);
+
+  padding: 56px 0 28px;
+}
+
+.dz-foot-grid {
+  display: grid;
+
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+
+  gap: 36px;
+}
+
+.dz-foot-brand strong {
+  display: block;
+
+  font-size: 1.3rem;
+
+  margin-bottom: 10px;
+}
+
+.dz-foot-brand p {
+  color: var(--dz-muted);
+
+  line-height: 1.6;
+
+  max-width: 300px;
+}
+
+.dz-foot-contact {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-top: 16px;
+}
+
+.dz-foot-contact a {
+  color: var(--dz-gold);
+
+  font-weight: 600;
+}
+
+.dz-foot-contact a:hover {
+  text-decoration: underline;
+}
+
+.dz-footer h4 {
+  margin: 0 0 14px;
+
+  font-size: 0.95rem;
+}
+
+.dz-footer ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.dz-footer li a {
+  color: var(--dz-muted);
+
+  font-size: 0.92rem;
+}
+
+.dz-footer li a:hover {
+  color: #fff;
+}
+
+.dz-foot-bottom {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+  margin-top: 44px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid var(--dz-line);
+
+  color: var(--dz-muted);
+
+  font-size: 0.85rem;
+}
+
+.dz-socials {
+  display: flex;
+
+  gap: 20px;
+}
+
+.dz-socials a:hover {
+  color: var(--dz-gold);
+}
+
+/* ============================================================
+   ACCESSIBILITY
+============================================================ */
+
+.dz a:focus-visible,
+.dz button:focus-visible {
+  outline: 2px solid var(--dz-gold);
+
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 900px) {
+  .dz-wrap {
+    width: calc(100% - 32px);
+  }
+
+  .dz-intro {
+    min-height: 72vh;
+
+    padding-bottom: 32px;
+  }
+
+  .dz-arrow {
+    display: none;
+  }
+
+  .dz-boards {
+    grid-template-columns: 1fr;
+  }
+
+  .dz-foot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dz-foot-brand {
+    grid-column: 1 / -1;
+  }
+
+  .dz-card--match,
+  .dz-card--video {
+    width: 78vw;
+  }
+
+  .dz-card--series {
+    width: 58vw;
+  }
+
+  .dz-card--story {
+    width: 68vw;
+  }
+
+  .dz-card--format {
+    width: 38vw;
+  }
+
+  .dz-card--player {
+    width: 46vw;
+  }
+
+  .dz-card--tool {
+    width: 62vw;
+  }
+
+  .dz-bg {
+    background-position: center center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dz-live i {
+    animation: none;
+  }
+
+  .dz-card,
+  .dz-bg {
+    transition: none;
+  }
+
+  .dz-card:hover {
+    transform: none;
+  }
+}
+.dz-match-title {
+  margin: 18px 0 10px;
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  max-width: 900px;
+}
+
+.team-india {
+  color: #f8fbfd; /* Light blue */
+}
+
+.team-australia {
+  color: #f2f7f4; /* Dark green */
+}
+
+.vs-text {
+  color: #ffffff;
+  margin: 0 8px;
+}
+/* ============================================================
+   FORCE DARK TEXT TO WHITE
+============================================================ */
+
+/* Main text */
+.dz,
+.dz h1,
+.dz h2,
+.dz h3,
+.dz h4,
+.dz p,
+.dz span,
+.dz strong,
+.dz small,
+.dz li,
+.dz a {
+  color: #ffffff;
+}
+
+/* Keep muted text slightly softer */
+.dz .dz-muted,
+.dz-card-body span,
+.dz-card-body small,
+.dz-story-text small,
+.dz-player-info span,
+.dz-board small,
+.dz-foot-brand p,
+.dz-footer li a,
+.dz-foot-bottom {
+  color: #ffffff;
+}
+
+/* Match title */
+.dz-match-title {
+  color: #ffffff;
+}
+
+.team-india {
+  color: #f8f9f9 !important; /* Light blue */
+}
+
+.team-australia {
+  color: #f1f5f2 !important; /* Dark green */
+}
+
+.vs-text {
+  color: #ffffff !important;
+}
+
+/* Score separator */
+.dz-score span {
+  color: #ffffff !important;
+}
+
+/* Footer links */
+.dz-footer li a {
+  color: #ffffff;
+}
+
+.dz-footer li a:hover {
+  color: var(--dz-gold);
+}
+
+/* See all links */
+.dz-rail-head a {
+  color: #ffffff;
+}
+
+.dz-rail-head a:hover {
+  color: var(--dz-gold);
+}
