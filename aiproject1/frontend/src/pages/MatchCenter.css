@@ -1,400 +1,544 @@
-.match-center-page {
+/* MAIN PAGE */
+
+.mc-page {
   min-height: 100vh;
-  padding: 36px 20px 70px;
-  background:
-    radial-gradient(circle at 10% 0%, #f0eaff 0, transparent 32%),
-    radial-gradient(circle at 100% 20%, #fff0e7 0, transparent 28%),
-    #f8f8fc;
-  color: #202033;
+  padding: 25px 6%;
+  background: #ffffff;
+  color: #202124;
+  font-family: Inter, Arial, sans-serif;
 }
 
-.mc-container {
-  width: min(1120px, 100%);
-  margin: 0 auto;
-}
-
-.mc-header {
+.mc-topbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
-.mc-eyebrow {
-  display: inline-block;
-  margin-bottom: 8px;
-  color: #7951d8;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.mc-header h1 {
-  margin: 0;
-  font-size: clamp(30px, 4vw, 42px);
-  font-weight: 850;
-  letter-spacing: -1.5px;
-}
-
-.mc-header p {
-  margin: 9px 0 0;
-  color: #77758a;
-  font-size: 14px;
-}
-
-.mc-back-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 18px;
-  border: 1px solid #e8e3f5;
-  border-radius: 12px;
-  background: #fff;
-  color: #6741c6;
-  font-size: 13px;
-  font-weight: 750;
+.mc-back {
+  color: #555;
   text-decoration: none;
-  white-space: nowrap;
-  transition: 0.2s ease;
+  font-size: 14px;
+  transition: 0.2s;
 }
 
-.mc-back-button:hover {
-  background: #f0eaff;
-  transform: translateY(-2px);
+.mc-back:hover {
+  color: #b38b18;
 }
 
-.mc-scoreboard {
+.mc-brand {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #202124;
+}
+
+.mc-brand b {
+  color: #c49a24;
+}
+
+/* HERO */
+
+.mc-hero {
   position: relative;
+  padding: 35px;
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   overflow: hidden;
-  padding: 28px;
-  border: 1px solid #eee8fa;
-  border-radius: 24px;
-  background: linear-gradient(135deg, #fff 0%, #faf7ff 100%);
-  box-shadow: 0 15px 45px rgb(60 40 100 / 6%);
 }
 
-.mc-scoreboard-top {
+.mc-hero-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
 }
 
-.mc-format {
-  color: #77758a;
+.mc-format,
+.mc-section-label {
+  color: #b38b18;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.7px;
 }
 
 .mc-status {
   padding: 7px 12px;
-  border-radius: 30px;
+  border-radius: 20px;
+  background: #f1f2f4;
+  color: #555;
   font-size: 10px;
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
-.mc-status.completed {
-  background: #e9f9ee;
-  color: #20844a;
-}
-
-.mc-status.upcoming {
-  background: #f0eaff;
-  color: #7044c6;
-}
-
-.mc-series {
-  margin: 18px 0;
-  color: #77758a;
-  font-size: 13px;
-}
-
-.mc-teams {
-  display: grid;
-  grid-template-columns: 1fr 70px 1fr;
-  align-items: center;
-  gap: 20px;
-}
-
-.mc-team {
+.mc-match-title {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 35px;
+  margin: 45px 0 20px;
   text-align: center;
-  min-width: 0;
 }
 
-.mc-team-badge {
-  display: grid;
-  place-items: center;
-  width: 76px;
-  height: 76px;
-  margin-bottom: 14px;
-  border: 1px solid #e7defa;
-  border-radius: 23px;
-  background: linear-gradient(145deg, #f2eaff, #fff);
-  color: #7245c9;
-  font-size: 30px;
+.mc-match-title h1 {
+  font-size: clamp(22px, 4vw, 42px);
   font-weight: 900;
-}
-
-.mc-team h2 {
-  margin: 0 0 12px;
-  font-size: clamp(16px, 2.5vw, 23px);
-  overflow-wrap: anywhere;
-}
-
-.mc-team > strong {
-  font-size: clamp(25px, 4vw, 36px);
-  font-weight: 900;
-  letter-spacing: -1px;
-}
-
-.mc-overs {
-  margin-top: 5px;
-  color: #858196;
-  font-size: 12px;
+  margin: 0;
+  color: #202124;
 }
 
 .mc-vs {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  justify-self: center;
-  border-radius: 50%;
-  background: #f0eaff;
-  color: #7650cb;
-  font-size: 12px;
+  color: #c49a24;
+  font-size: 18px;
   font-weight: 900;
 }
 
-.mc-result {
+.mc-match-meta {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  margin-top: 25px;
-  padding: 15px;
-  border-radius: 13px;
-  background: #f6f2ff;
-  color: #6841bd;
-  text-align: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  color: #777;
   font-size: 13px;
 }
 
-.mc-result strong {
-  font-size: 15px;
+.mc-score-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 650px;
+  margin: 35px auto 0;
 }
 
-.mc-result span {
-  color: #77718b;
+.mc-team-score {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #f9f9f9;
 }
+
+.mc-team-score span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.mc-team-score strong {
+  display: block;
+  font-size: 34px;
+  font-weight: 900;
+  color: #202124;
+}
+
+.mc-team-score small {
+  display: block;
+  margin-top: 8px;
+  color: #777;
+}
+
+.mc-result {
+  text-align: center;
+  margin-top: 25px;
+  color: #a17b12;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* MATCH INFORMATION */
 
 .mc-info-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 22px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 25px 0;
 }
 
-.mc-card {
+.mc-info-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 18px;
   min-width: 0;
-  padding: 22px;
-  border: 1px solid #eeeaf5;
-  border-radius: 18px;
-  background: rgb(255 255 255 / 90%);
-  box-shadow: 0 8px 25px rgb(45 30 80 / 3%);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
 }
 
-.mc-card-label {
+.mc-info-card span {
   display: block;
-  margin-bottom: 10px;
-  color: #918ba3;
+  color: #888;
   font-size: 10px;
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 1.2px;
+  margin-bottom: 10px;
 }
 
-.mc-card h3 {
-  margin: 0;
-  color: #302a43;
-  font-size: 15px;
-  line-height: 1.6;
+.mc-info-card strong {
+  display: block;
+  font-size: 14px;
+  color: #202124;
   overflow-wrap: anywhere;
 }
 
-.mc-section {
-  margin-top: 38px;
+/* MAIN SECTIONS */
+
+.mc-main-section {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 25px 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.035);
+}
+
+.mc-main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.mc-main-heading h2 {
+  font-size: 25px;
+  margin: 8px 0 0;
+  color: #202124;
+}
+
+.mc-match-id {
+  color: #888;
+  font-size: 12px;
 }
 
 .mc-section-heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 17px;
-}
-
-.mc-section-heading h2 {
-  margin: 0;
-  color: #29253b;
-  font-size: 24px;
-  letter-spacing: -0.5px;
-}
-
-.mc-innings-list {
-  display: grid;
-  gap: 12px;
-}
-
-.mc-innings-card {
-  padding: 20px 24px;
-  border: 1px solid #eeeaf5;
-  border-radius: 17px;
-  background: #fff;
-  transition: 0.2s ease;
-}
-
-.mc-innings-card:hover {
-  border-color: #d9cafa;
-  transform: translateY(-2px);
-}
-
-.mc-innings-team {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+  gap: 15px;
+  margin-bottom: 18px;
 }
 
-.mc-innings-team h3 {
-  margin: 0;
-  font-size: 17px;
+.mc-section-heading h3 {
+  font-size: 19px;
+  margin: 8px 0 0;
+  color: #202124;
 }
 
-.mc-innings-team p {
-  margin: 6px 0 0;
-  color: #8b879a;
-  font-size: 12px;
-}
-
-.mc-innings-score {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 5px;
-}
-
-.mc-innings-score strong {
-  color: #6e45c3;
-  font-size: 24px;
+.mc-innings-total {
+  text-align: right;
+  font-size: 25px;
   font-weight: 900;
+  color: #202124;
 }
 
-.mc-innings-score span {
-  color: #898499;
+.mc-innings-total span {
+  display: block;
+  font-size: 11px;
+  color: #777;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+/* INNINGS TABS */
+
+.mc-innings-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.mc-innings-tabs button {
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  color: #555;
+  padding: 12px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.mc-innings-tabs button span {
+  margin-left: 12px;
+  color: #202124;
+}
+
+.mc-innings-tabs button:hover,
+.mc-innings-tabs button.active {
+  background: #d4af37;
+  color: #ffffff;
+  border-color: #d4af37;
+}
+
+.mc-innings-tabs button.active span {
+  color: #ffffff;
+}
+
+/* TABLES */
+
+.mc-table-section {
+  margin-bottom: 35px;
+}
+
+.mc-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.mc-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+  background: #ffffff;
+}
+
+.mc-table th {
+  text-align: left;
+  padding: 15px 13px;
+  background: #f3f4f6;
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  white-space: nowrap;
+}
+
+.mc-table td {
+  padding: 15px 13px;
+  border-bottom: 1px solid #eeeeee;
+  color: #444;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.mc-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.mc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.mc-table .mc-player-name {
+  color: #202124;
+  font-weight: 800;
+}
+
+.mc-table .mc-dismissal {
+  color: #888;
   font-size: 12px;
+}
+
+.mc-highlight-number {
+  color: #a17b12 !important;
+  font-weight: 900;
 }
 
 .mc-empty {
-  padding: 28px;
-  border: 1px dashed #ded5f1;
-  border-radius: 16px;
-  background: #fff;
-  color: #77718b;
   text-align: center;
+  padding: 25px !important;
+  color: #888 !important;
 }
 
-.mc-toss-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+/* EXTRAS AND TOTAL */
+
+.mc-extras {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  color: #666;
+  font-size: 13px;
 }
 
-.mc-ai-card {
+.mc-extras strong {
+  color: #202124;
+}
+
+.mc-extras small {
+  color: #888;
+  font-size: 11px;
+}
+
+.mc-total-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
-  margin-top: 35px;
-  padding: 30px;
-  border: 1px solid #e8defb;
-  border-radius: 22px;
-  background: linear-gradient(120deg, #f1eaff, #fff8f3);
-}
-
-.mc-ai-label {
-  color: #7951d8;
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-}
-
-.mc-ai-card h2 {
-  margin: 9px 0;
-  color: #2c2540;
-  font-size: 23px;
-}
-
-.mc-ai-card p {
-  margin: 0;
-  color: #77718b;
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-.mc-ai-button {
-  flex-shrink: 0;
-  padding: 14px 20px;
-  border-radius: 12px;
-  background: #7951d8;
-  color: #fff;
-  font-size: 12px;
+  padding: 17px 15px;
+  background: #f1f1f1;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
   font-weight: 800;
-  text-decoration: none;
-  transition: 0.2s ease;
+  color: #202124;
 }
 
-.mc-ai-button:hover {
-  background: #6237c0;
-  transform: translateY(-2px);
+.mc-total-row strong {
+  color: #a17b12;
+  font-size: 19px;
 }
 
-.mc-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 55vh;
-  padding: 30px;
-  text-align: center;
+/* FALL OF WICKETS */
+
+.mc-extra-information {
+  padding: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
 }
 
-.mc-message h2 {
-  margin: 15px 0 8px;
-  color: #302a43;
+.mc-extra-information h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #202124;
 }
 
-.mc-message p {
+.mc-extra-information p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+/* TOP PERFORMERS */
+
+.mc-performer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.mc-performer-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 22px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.mc-performer-rank {
+  color: #b38b18;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.mc-performer-card h3 {
+  margin: 15px 0 5px;
+  font-size: 17px;
+  color: #202124;
+}
+
+.mc-performer-card p {
   margin: 0 0 20px;
-  color: #77758a;
-  line-height: 1.7;
+  color: #888;
+  font-size: 12px;
 }
 
-.mc-error {
-  min-height: 60vh;
+.mc-performer-card > strong {
+  display: block;
+  color: #b38b18;
+  font-size: 32px;
 }
 
-.mc-spinner {
+.mc-performer-card > strong small {
+  color: #888;
+  font-size: 12px;
+}
+
+.mc-performer-card div {
+  color: #777;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.mc-performer-sr {
+  display: block;
+  margin-top: 15px;
+  color: #555;
+  font-size: 12px;
+}
+
+/* SQUADS */
+
+.mc-squad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.mc-squad-card {
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.mc-squad-card h3 {
+  color: #a17b12;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.mc-squad-player {
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+  color: #444;
+  font-size: 13px;
+}
+
+.mc-squad-player:last-child {
+  border-bottom: none;
+}
+
+.mc-squad-player span {
+  color: #999;
+  width: 20px;
+}
+
+/* AI SECTION */
+
+.mc-ai-section pre {
+  padding: 20px;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow-x: auto;
+  color: #8a6810;
+}
+
+/* LOADING AND ERROR */
+
+.mc-state {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffffff;
+  color: #202124;
+}
+
+.mc-state p {
+  color: #777;
+}
+
+.mc-loader {
   width: 42px;
   height: 42px;
-  border: 4px solid #e8defb;
-  border-top-color: #7951d8;
+  border: 3px solid #eee;
+  border-top-color: #d4af37;
   border-radius: 50%;
   animation: mc-spin 0.8s linear infinite;
+  margin-bottom: 20px;
 }
 
 @keyframes mc-spin {
@@ -403,67 +547,96 @@
   }
 }
 
-@media (max-width: 850px) {
+.mc-back-button {
+  color: #ffffff;
+  background: #c49a24;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.mc-footer {
+  text-align: center;
+  padding: 30px;
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
   .mc-info-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mc-performer-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .match-center-page {
-    padding: 24px 14px 45px;
+  .mc-page {
+    padding: 18px 4%;
   }
 
-  .mc-header {
-    align-items: flex-start;
-    flex-direction: column;
+  .mc-hero {
+    padding: 22px 15px;
   }
 
-  .mc-scoreboard {
-    padding: 20px 14px;
+  .mc-match-title {
+    gap: 12px;
+    margin: 35px 0 20px;
   }
 
-  .mc-teams {
-    grid-template-columns: 1fr 38px 1fr;
-    gap: 8px;
+  .mc-match-title h1 {
+    font-size: 21px;
   }
 
-  .mc-team-badge {
-    width: 58px;
-    height: 58px;
-    border-radius: 18px;
-    font-size: 23px;
+  .mc-score-summary {
+    gap: 10px;
   }
 
-  .mc-vs {
-    width: 36px;
-    height: 36px;
-    font-size: 10px;
+  .mc-team-score {
+    padding: 15px 8px;
+  }
+
+  .mc-team-score strong {
+    font-size: 25px;
   }
 
   .mc-info-grid {
     gap: 10px;
   }
 
-  .mc-card {
-    padding: 16px;
+  .mc-info-card {
+    padding: 13px;
   }
 
-  .mc-toss-card {
+  .mc-main-section {
+    padding: 17px 12px;
+  }
+
+  .mc-main-heading h2 {
+    font-size: 20px;
+  }
+
+  .mc-section-heading h3 {
+    font-size: 16px;
+  }
+
+  .mc-performer-grid,
+  .mc-squad-grid {
     grid-template-columns: 1fr;
   }
 
-  .mc-innings-card {
-    padding: 18px 14px;
+  .mc-extras {
+    flex-wrap: wrap;
   }
 
-  .mc-ai-card {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 23px;
-  }
-
-  .mc-ai-card h2 {
-    font-size: 20px;
+  .mc-extras small {
+    flex-basis: 100%;
   }
 }

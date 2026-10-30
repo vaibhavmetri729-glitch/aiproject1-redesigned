@@ -523,7 +523,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Slow left-arm orthodox",
       age: 34,
-      image: "/players/axar-patel.png",
+      image: "/players/axar.png",
       career: {
         matches: 208,
         runs: 5048,
@@ -553,7 +553,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm off break",
       age: 32,
-      image: "/players/washington-sundar.png",
+      image: "/players/sundar.png",
       career: {
         matches: 160,
         runs: 3053,
@@ -631,7 +631,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Left-arm fast",
       age: 24,
-      image: "/players/mitchell-starc.png",
+      image: "/players/starc.png",
       career: {
         matches: 220,
         wickets: 383,
@@ -719,7 +719,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm off break",
       age: 27,
-      image: "/players/glenn-maxwell.png",
+      image: "/players/glenn.png",
       career: {
         matches: 253,
         runs: 3689,
@@ -861,7 +861,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm medium",
       age: 22,
-      image: "/players/joe-root.png",
+      image: "/players/root.png",
       career: {
         matches: 210,
         runs: 7933,
@@ -991,7 +991,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm fast-medium",
       age: 38,
-      image: "/players/jofra-archer.png",
+      image: "/players/jofra.png",
       career: {
         matches: 225,
         wickets: 449,
@@ -1421,7 +1421,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm fast",
       age: 26,
-      image: "/players/lungi-ngidi.png",
+      image: "/players/lungi.png",
       career: {
         matches: 237,
         wickets: 401,
@@ -1625,7 +1625,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm medium",
       age: 30,
-      image: "/players/reeza-hendricks.png",
+      image: "/players/reeza.png",
       career: {
         matches: 207,
         runs: 7946,
@@ -1649,7 +1649,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm fast-medium",
       age: 22,
-      image: "/players/gerald-coetzee.png",
+      image: "/players/gerald.png",
       career: {
         matches: 197,
         wickets: 341,
@@ -2099,7 +2099,7 @@ export const playerProfiles = {
       battingStyle: "Left-hand bat",
       bowlingStyle: "Right-arm off break",
       age: 25,
-      image: "/players/devon-conway.png",
+      image: "/players/con.png",
       career: {
         matches: 244,
         runs: 9902,
@@ -2239,7 +2239,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm medium-fast",
       age: 26,
-      image: "/players/trent-boult.png",
+      image: "/players/boult.png",
       career: {
         matches: 203,
         wickets: 360,
@@ -2327,7 +2327,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Slow left-arm orthodox",
       age: 23,
-      image: "/players/ish-sodhi.png",
+      image: "/players/ish.png",
       career: {
         matches: 231,
         wickets: 446,
@@ -2403,7 +2403,7 @@ export const playerProfiles = {
       battingStyle: "Right-hand bat",
       bowlingStyle: "Right-arm off break",
       age: 36,
-      image: "/players/will-young.png",
+      image: "/players/will.png",
       career: {
         matches: 210,
         runs: 8185,

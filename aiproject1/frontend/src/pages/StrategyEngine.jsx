@@ -3,6 +3,48 @@ import { TEAM_STRENGTHS } from "../data/mockData";
 import "./StrategyEngine.css";
 
 const TEAM_OPTIONS = Object.keys(TEAM_STRENGTHS);
+// Demo squad data for the teams available in TEAM_STRENGTHS.
+// Replace these sample squads with your MongoDB player records when that API is connected.
+const TEAM_SQUADS = {
+  India: {
+    playingXI: ["Rohit Sharma", "Shubman Gill", "Virat Kohli", "KL Rahul", "Hardik Pandya", "Ravindra Jadeja", "Axar Patel", "Jasprit Bumrah", "Mohammed Shami", "Mohammed Siraj", "Kuldeep Yadav"],
+    battingOrder: ["Rohit Sharma", "Shubman Gill", "Virat Kohli", "KL Rahul", "Hardik Pandya"],
+    bowlingPlan: ["Jasprit Bumrah: attack during the powerplay and at the death.", "Mohammed Shami: use seam movement with the new ball.", "Kuldeep Yadav: attack for wickets in the middle overs.", "Ravindra Jadeja: control the run rate and build pressure."],
+    leadBowler: "Jasprit Bumrah",
+  },
+  Australia: {
+    playingXI: ["Travis Head", "David Warner", "Mitchell Marsh", "Steve Smith", "Marnus Labuschagne", "Glenn Maxwell", "Josh Inglis", "Pat Cummins", "Mitchell Starc", "Adam Zampa", "Josh Hazlewood"],
+    battingOrder: ["Travis Head", "David Warner", "Mitchell Marsh", "Steve Smith", "Glenn Maxwell"],
+    bowlingPlan: ["Mitchell Starc: attack with left-arm pace and swing.", "Josh Hazlewood: hit consistent hard lengths.", "Pat Cummins: use pace changes in the middle and death overs.", "Adam Zampa: attack for wickets through middle overs."],
+    leadBowler: "Mitchell Starc",
+  },
+  England: {
+    playingXI: ["Jos Buttler", "Phil Salt", "Ben Duckett", "Joe Root", "Harry Brook", "Liam Livingstone", "Sam Curran", "Chris Woakes", "Jofra Archer", "Adil Rashid", "Mark Wood"],
+    battingOrder: ["Phil Salt", "Jos Buttler", "Ben Duckett", "Joe Root", "Harry Brook"],
+    bowlingPlan: ["Jofra Archer: use pace and bounce in the powerplay.", "Chris Woakes: swing the new ball.", "Adil Rashid: attack with leg-spin in the middle overs.", "Sam Curran: vary pace at the death."],
+    leadBowler: "Jofra Archer",
+  },
+  Pakistan: {
+    playingXI: ["Babar Azam", "Mohammad Rizwan", "Fakhar Zaman", "Saim Ayub", "Iftikhar Ahmed", "Shadab Khan", "Mohammad Nawaz", "Shaheen Afridi", "Haris Rauf", "Naseem Shah", "Abrar Ahmed"],
+    battingOrder: ["Babar Azam", "Mohammad Rizwan", "Fakhar Zaman", "Saim Ayub", "Iftikhar Ahmed"],
+    bowlingPlan: ["Shaheen Afridi: target early wickets with left-arm swing.", "Naseem Shah: maintain attacking line and length.", "Haris Rauf: use pace and hard lengths.", "Shadab Khan: take wickets with leg-spin in the middle overs."],
+    leadBowler: "Shaheen Afridi",
+  },
+  "South Africa": {
+    playingXI: ["Quinton de Kock", "Aiden Markram", "Temba Bavuma", "Rassie van der Dussen", "Heinrich Klaasen", "David Miller", "Marco Jansen", "Keshav Maharaj", "Kagiso Rabada", "Anrich Nortje", "Tabraiz Shamsi"],
+    battingOrder: ["Quinton de Kock", "Aiden Markram", "Temba Bavuma", "Rassie van der Dussen", "Heinrich Klaasen"],
+    bowlingPlan: ["Kagiso Rabada: attack with pace in the powerplay.", "Anrich Nortje: use extra pace and bounce.", "Marco Jansen: exploit bounce and left-arm angle.", "Keshav Maharaj: control the middle overs with spin."],
+    leadBowler: "Kagiso Rabada",
+  },
+  "New Zealand": {
+    playingXI: ["Devon Conway", "Finn Allen", "Kane Williamson", "Daryl Mitchell", "Glenn Phillips", "Tom Latham", "Mitchell Santner", "Matt Henry", "Tim Southee", "Lockie Ferguson", "Ish Sodhi"],
+    battingOrder: ["Devon Conway", "Finn Allen", "Kane Williamson", "Daryl Mitchell", "Glenn Phillips"],
+    bowlingPlan: ["Matt Henry: swing the new ball and attack the stumps.", "Tim Southee: use seam movement early.", "Lockie Ferguson: use pace and bounce.", "Mitchell Santner: control the middle overs with spin."],
+    leadBowler: "Matt Henry",
+  },
+};
+
+const DEFAULT_SQUAD = TEAM_SQUADS.India;
 
 const VENUES = [
   "Mumbai",
@@ -163,65 +205,9 @@ function StrategyEngine() {
     const venueData =
       VENUE_INTELLIGENCE[venue];
 
-    let playingXI;
-
-    if (pitch === "Spin") {
-      playingXI = [
-        "Rohit Sharma",
-        "Shubman Gill",
-        "Virat Kohli",
-        "KL Rahul",
-        "Hardik Pandya",
-        "Ravindra Jadeja",
-        "Axar Patel",
-        "Kuldeep Yadav",
-        "Jasprit Bumrah",
-        "Mohammed Shami",
-        "Yuzvendra Chahal",
-      ];
-    } else if (pitch === "Seam") {
-      playingXI = [
-        "Rohit Sharma",
-        "Shubman Gill",
-        "Virat Kohli",
-        "KL Rahul",
-        "Hardik Pandya",
-        "Ravindra Jadeja",
-        "Jasprit Bumrah",
-        "Mohammed Shami",
-        "Mohammed Siraj",
-        "Arshdeep Singh",
-        "Shardul Thakur",
-      ];
-    } else if (format === "T20") {
-      playingXI = [
-        "Rohit Sharma",
-        "KL Rahul",
-        "Virat Kohli",
-        "Suryakumar Yadav",
-        "Hardik Pandya",
-        "Rinku Singh",
-        "Ravindra Jadeja",
-        "Jasprit Bumrah",
-        "Mohammed Siraj",
-        "Kuldeep Yadav",
-        "Arshdeep Singh",
-      ];
-    } else {
-      playingXI = [
-        "Rohit Sharma",
-        "Shubman Gill",
-        "Virat Kohli",
-        "KL Rahul",
-        "Hardik Pandya",
-        "Ravindra Jadeja",
-        "Axar Patel",
-        "Jasprit Bumrah",
-        "Mohammed Shami",
-        "Mohammed Siraj",
-        "Kuldeep Yadav",
-      ];
-    }
+    // Select the squad from TEAM 1, not a hardcoded India XI.
+    const squad = TEAM_SQUADS[team1] || DEFAULT_SQUAD;
+    const playingXI = [...squad.playingXI];
 
     const target =
       format === "T20"
@@ -242,20 +228,9 @@ function StrategyEngine() {
     setStrategy({
       playingXI,
 
-      battingOrder: [
-        "Rohit Sharma",
-        "Shubman Gill",
-        "Virat Kohli",
-        "KL Rahul",
-        "Hardik Pandya",
-      ],
+      battingOrder: squad.battingOrder,
 
-      bowlingPlan: [
-        "Bumrah: attack during the powerplay.",
-        "Shami: attack right-handers with seam movement.",
-        "Kuldeep: primary middle-over wicket threat.",
-        "Jadeja: restrict singles and build pressure.",
-      ],
+      bowlingPlan: squad.bowlingPlan,
 
       powerplay:
         opponent.powerplay,
@@ -282,7 +257,7 @@ function StrategyEngine() {
         target,
 
       bestMatchup:
-        opponent.matchup,
+        `${squad.leadBowler} vs ${team2} top order`, 
 
       venuePitch:
         venueData.pitch,
@@ -296,7 +271,7 @@ function StrategyEngine() {
       confidence,
 
       ai:
-        `${team1} should exploit ${team2}'s identified weakness while adapting to the ${venue} conditions. The priority is to control the powerplay, attack during the middle overs and preserve finishing resources for the final phase.`,
+        `${team1} should use its selected XI and ${squad.leadBowler} as a key bowling option against ${team2}. Adapt the batting and bowling plans to the ${venue} conditions, control the powerplay and preserve finishing resources for the final phase.`,
 
       tossDecision:
         tossWinner === team1
