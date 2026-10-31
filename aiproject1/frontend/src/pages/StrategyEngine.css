@@ -819,3 +819,93 @@
     gap: 7px;
   }
 }
+/* =========================================================
+   STRATEGY REPORT DOWNLOAD
+   Append this block to the END of StrategyEngine.css.
+   ========================================================= */
+
+.strategy-download-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 18px;
+}
+
+.strategy-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--gold), #b8860b);
+  color: var(--navy-950);
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.strategy-download-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 7px 20px rgba(212, 175, 55, 0.22);
+}
+
+.strategy-download-btn:active {
+  transform: translateY(0);
+}
+
+.strategy-download-btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 650px) {
+  .strategy-download-wrapper {
+    justify-content: stretch;
+  }
+
+  .strategy-download-btn {
+    width: 100%;
+  }
+}
+/* PDF DOWNLOAD BUTTON */
+
+.strategy-download-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.strategy-download-btn {
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #111;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.strategy-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(212, 175, 55, 0.25);
+}
+
+/* PDF CONTENT */
+
+.strategy-bento {
+  background: #0a0a0c;
+  color: #ffffff;
+}
+
+.strategy-bento .bento-card,
+.strategy-bento .ai-winning-strategy {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
